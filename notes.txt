@@ -40,3 +40,36 @@ node is working with names and bio, add pics..
 then, add spodify, you tube 
 connect 2 pages.
 add styling
+
+
+
+
+
+
+  <h3 class="text-center">Meet the Band</h3>  
+  <% rollArr.map(rollObj=> { %>
+  <ul class="nav nav-tabs">
+
+  <li class="active"><a data-toggle="tab" href="#home"><%= rollObj.name %></a></li>
+    <li><a data-toggle="tab" href="#menu1"><%= rollObj.name %></a></li>
+    <li><a data-toggle="tab" href="#menu2"><%= rollObj.name %> </a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      
+
+      <h1><%= rollObj.name %> </h1>
+      <p><%= rollObj.roll %> </p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2><%= rollObj.name %> </h2>
+      <p><%= rollObj.roll %> </p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h2><%= rollObj.name %> </h2>
+      <p><%= rollObj.roll %> </p>
+    </div>
+    <% }) %>
+  </div>
+</div>
