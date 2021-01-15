@@ -15,12 +15,14 @@ router.get('/Albums',(req,res)=>{
     let albumCovers = []; //populate with all of the artwork
     let albumNames = [];
     let musicLink = [];
+    let spotifyLink = [];
 
     albums.forEach(albumObj=>{
 
         albumCovers = albumCovers.concat(albumObj.artwork)
-        musicLink = musicLink.concat(albumObj.appleMusic)
         albumNames = albumNames.concat(albumObj.albumname)
+        musicLink = musicLink.concat(albumObj.appleMusic)
+        spotifyLink = spotifyLink.concat(albumObj.spotify)
 
     })
 
@@ -30,6 +32,7 @@ router.get('/Albums',(req,res)=>{
         albumnames: albumNames,
         artist: artist,
         musicLink: musicLink,
+        spotyfyLink: spotifyLink
     })
 })
 router.get('/Albums/:Albumsid',(req,res)=>{
