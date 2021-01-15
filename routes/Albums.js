@@ -14,12 +14,12 @@ router.get('/Albums',(req,res)=>{
 
     let albumCovers = []; //populate with all of the artwork
     let albumNames = [];
-    let hrefsAM = [];
+    let musicLink = [];
 
     albums.forEach(albumObj=>{
 
         albumCovers = albumCovers.concat(albumObj.artwork)
-        hrefsAM = hrefsAM.concat(albumObj.appleMusic)
+        musicLink = musicLink.concat(albumObj.appleMusic)
         albumNames = albumNames.concat(albumObj.albumname)
 
     })
@@ -29,10 +29,9 @@ router.get('/Albums',(req,res)=>{
         artwork: albumCovers,
         albumnames: albumNames,
         artist: artist,
-        hrefsAM: hrefsAM,
+        musicLink: musicLink,
     })
 })
-
 router.get('/Albums/:Albumsid',(req,res)=>{
 
     let albumArray = dataFile.albums; 

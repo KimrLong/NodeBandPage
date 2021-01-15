@@ -73,3 +73,13 @@ add styling
     <% }) %>
   </div>
 </div>
+
+
+
+<!-- 
+                        <a class="dropdown-item" href="/Albums">Albums</a>
+
+
+                    <% albums.forEach(albumObj => { %>
+                        <a class="dropdown-item" href="/Albums/<%= albumObj.shortname %>"><%= albumObj.albumname %> </a>
+                    <% }) %> -->

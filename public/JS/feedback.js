@@ -63,14 +63,7 @@ $(()=>{
 
         if(e.target.className == "removeItem")
         {
-            console.log('im here');
-            // $('.feedback-delete').remove();
-    
-            // $.delete('/api', {
-            //     name: $('#feedback-form-name').val(),
-            //     title: $('#feedback-form-title').val(),
-            //     message: $('#feedback-form-message').val()
-            // }, updateFeedback)
+
 
             $.ajax({
                 url: '/api',

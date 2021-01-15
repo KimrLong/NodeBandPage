@@ -13,10 +13,32 @@
         <div class="container-fluid">
 
           <%- include("partials/content/header.ejs")  %>
+          <!-- Container (The Band Section) -->
 
+<div id="band" class="container text-center">
+  <h3><strong>ISSUES</strong></h3>
+  <p><em>Meet the Band</em></p>
+  <p>Issues is an American rock band based in Atlanta, Georgia, founded in 2012. The band currently consists of guitarist and vocalist AJ Rebollo, bassist and vocalist Skyler Acord, and drummer Josh Manuel. They are known for their combination of metalcore, nu metal, pop and contemporary R&B.<p>
+
+  <div class="row">
+    <% bandInfo.forEach(bandObj=> { %>
+    <div class="col-sm-4">
+    
+      <p class="text-center"><%= bandObj.name %> </p>
+      <a href="#demo" data-toggle="collapse">
+        <img src="/images/<%= bandObj.picture %>" class="img-circle picture" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo" class="collapse">
+        <p><%= bandObj.roll %> </p>
+      </div>
+    </div>
+    <% }) %>
+</div>
+
+<!-- this is from w3schools-->
             <div class="row mt-5">  
-              <div class="col d-flex justify-content-center " style="height:500px; background-image: url('images/anglebg.jpeg'); background-size: 100%; font-size: 80px; color: rgb(255, 255, 255)">
-                Issues
+              <div class="col d-flex justify-content-center " style="height:400px; background-image: url('images/anglebg.jpeg'); background-size: 100%; font-size: 80px; color: rgb(255, 255, 255)">
+
               </div>
           </div>
     </div>
