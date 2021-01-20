@@ -1,14 +1,11 @@
 
 <!doctype html>
 <html lang="en">
-
 <head>
-  <%- include("partials/template/head.ejs")  %>
+  
+  <%- include("partials/template/head.ejs") %>
 </head>
-<style>
-  a {
-    color: #DD4F53;
-  }</style>
+
 <body>
 
   <div class="container-fluid ">
@@ -17,7 +14,7 @@
     <div id="band" class="container pt-20 text-center">
       <h1><strong>ISSUES</strong></h1>
       <h3><em>Meet the Band</em></h3>
-      <p>Issues is an American rock band based in Atlanta, Georgia, founded in 2012. The band currently consists of guitarist and vocalist AJ Rebollo, bassist and vocalist Skyler Acord, and drummer Josh Manuel. They are known for their combination of metalcore, nu metal, pop and contemporary R&B.<p>
+      <p><b>Issues is an American rock band based in Atlanta, Georgia, founded in 2012. The band currently consists of guitarist and vocalist AJ Rebollo, bassist and vocalist Skyler Acord, and drummer Josh Manuel. They are known for their combination of metalcore, nu metal, pop and contemporary R&B.</b><p>
         <div class="row">
           <% bandInfo.forEach(bandObj=> { %>
             <div class="col-sm-4">
@@ -32,12 +29,12 @@
               <% }) %>
             
             <!--footer-->
-            <div class="row pt-5">  
-              <div class="jumbotron d-none d-lg-block width-100" style="height:400px; background-image: url('images/anglebg.jpeg'); background-size: 100%; font-size: 80px; color: rgb(255, 255, 255)">
-              </div>
           </div>
       </div>
     </div>
+  <div class="row pt-5">  
+    <div class="jumbotron d-none d-lg-block width-100" style="height:400px; background-image: url('images/anglebg.jpeg'); background-size: 100%; font-size: 80px; color: rgb(255, 255, 255)">
+  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
