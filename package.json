@@ -1,7 +1,7 @@
 {
   "name": "artist",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "bin/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,5 +13,8 @@
     "express": "^4.17.1"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "",
+  "bin": {
+    "hello": "./bin/app.js"
+  }
 }
